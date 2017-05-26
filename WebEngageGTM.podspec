@@ -10,11 +10,11 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://webengage.com"
 
-  s.platform     = :ios, "8 .0"
+  s.platform     = :ios, "8.0"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Arpit Agrawal" => "arpit@webklipper.com" }
-  s.source       = { :git => "https://github.com/WebEngage/WebengageGTMTags.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/WebEngage/WebEngageGTM.git", :tag => "#{s.version}" }
 
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
