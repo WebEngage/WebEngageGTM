@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WebEngageGTM"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "WebEngage Implementation of GTM Tags"
 
   s.description  = <<-DESC
@@ -18,11 +18,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/WebEngage/WebEngageGTM.git", :tag => "#{s.version}" }
 
 
-  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  #s.exclude_files = "Classes/Exclude"
-
-  #s.public_header_files = "WebEngageGTM.h"
-
+  s.source_files  = "WebEngageGTM/**/*"
+  
   s.dependency "WebEngage", "~> 3.5.4"
   s.dependency "GoogleTagManager", "~> 5.0"
 
