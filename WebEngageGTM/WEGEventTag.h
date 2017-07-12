@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import GoogleTagManager;
+#import <GoogleTagManager/GoogleTagManager.h>
 
 @interface WEGEventTag : NSObject<TAGCustomFunction>
 

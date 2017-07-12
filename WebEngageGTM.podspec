@@ -23,4 +23,16 @@ Pod::Spec.new do |s|
   s.dependency "WebEngage", "~> 3.5.4"
   s.dependency "GoogleTagManager", "~> 5.0"
 
+  s.subspec 'Xcode7' do |xc7|
+    xc7.dependency 'WebEngage/Xcode7', '~> 3.5.4'
+    xc7.dependency 'GoogleTagManager', '~> 5.0'
+  end
+
+  s.subspec 'Xcode8' do |xc8|
+    xc8.dependency 'WebEngage', '~> 3.5.4'
+    xc8.dependency 'GoogleTagManager', '~> 5.0'
+  end
+
+  s.default_subspec = 'Xcode8'
+
 end
