@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WebEngageGTM"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "WebEngage Implementation of GTM Tags"
 
   s.description  = <<-DESC
@@ -26,6 +26,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'Xcode8' do |xc8|
     xc8.dependency 'WebEngage', '~> 3.5.4'
+  end
+
+  s.subspec 'NoWebEngage' do |o|
   end
 
   s.default_subspec = 'Xcode8'
