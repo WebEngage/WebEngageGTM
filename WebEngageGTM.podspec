@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WebEngageGTM"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "WebEngage Implementation of GTM Tags"
 
   s.description  = <<-DESC
@@ -18,20 +18,22 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/WebEngage/WebEngageGTM.git", :tag => "#{s.version}" }
 
 
-  s.source_files  = "WebEngageGTM/**/*"
+  
   
   s.subspec 'Xcode7' do |xc7|
-    xc7.dependency 'WebEngage/Xcode7', '~> 3.5.4'
     xc7.dependency 'GoogleTagManager', '~> 5.0'
+    xc7.dependency 'WebEngage/Xcode7', '~> 3.5.4'
+    xc7.source_files  = "WebEngageGTM/**/*"
   end
 
   s.subspec 'Xcode8' do |xc8|
-    xc8.dependency 'WebEngage', '~> 3.5.4'
     xc8.dependency 'GoogleTagManager', '~> 5.0'
+    xc8.dependency 'WebEngage', '~> 3.5.4'
+    xc8.source_files  = "WebEngageGTM/**/*"
   end
 
   s.subspec 'NoWebEngage' do |o|
-    o.source_files  = "WebEngageGTM/**/*"
+    o.preserve_paths  = "WebEngageGTM/**/*.{h,m}"
   end
 
   s.default_subspec = 'Xcode8'
