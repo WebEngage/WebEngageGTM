@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WEGDeleteUserAttributeTag.h"
+#import "WEGEventTag.h"
+#import "WEGScreenTag.h"
+#import "WEGSetUserAttributeag.h"
 
 //! Project version number for WebEngageGTM.
 FOUNDATION_EXPORT double WebEngageGTMVersionNumber;

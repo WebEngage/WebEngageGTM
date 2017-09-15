@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WebEngageGTM"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "WebEngage Implementation of GTM Tags"
 
   s.description  = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://webengage.com"
   s.social_media_url = "http://twitter.com/webengage"
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Arpit Agrawal" => "arpit@webklipper.com" }

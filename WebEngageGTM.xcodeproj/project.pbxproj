@@ -11,7 +11,6 @@
 		2B4686171ED8790A00C7E021 /* WebEngageGTM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B46860D1ED8790A00C7E021 /* WebEngageGTM.framework */; };
 		2B46861C1ED8790A00C7E021 /* WebEngageGTMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46861B1ED8790A00C7E021 /* WebEngageGTMTests.m */; };
 		2B46861E1ED8790A00C7E021 /* WebEngageGTM.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4686101ED8790A00C7E021 /* WebEngageGTM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B4686321ED879B300C7E021 /* WebEngageGTMTags.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4686271ED879B300C7E021 /* WebEngageGTMTags.h */; };
 		2B4686331ED879B300C7E021 /* WEGDeleteUserAttributeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4686281ED879B300C7E021 /* WEGDeleteUserAttributeTag.h */; };
 		2B4686341ED879B300C7E021 /* WEGDeleteUserAttributeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4686291ED879B300C7E021 /* WEGDeleteUserAttributeTag.m */; };
 		2B4686351ED879B300C7E021 /* WEGEventTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46862A1ED879B300C7E021 /* WEGEventTag.h */; };
@@ -44,7 +43,6 @@
 		2B4686161ED8790A00C7E021 /* WebEngageGTMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebEngageGTMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B46861B1ED8790A00C7E021 /* WebEngageGTMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebEngageGTMTests.m; sourceTree = "<group>"; };
 		2B46861D1ED8790A00C7E021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B4686271ED879B300C7E021 /* WebEngageGTMTags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebEngageGTMTags.h; sourceTree = "<group>"; };
 		2B4686281ED879B300C7E021 /* WEGDeleteUserAttributeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEGDeleteUserAttributeTag.h; sourceTree = "<group>"; };
 		2B4686291ED879B300C7E021 /* WEGDeleteUserAttributeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEGDeleteUserAttributeTag.m; sourceTree = "<group>"; };
 		2B46862A1ED879B300C7E021 /* WEGEventTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEGEventTag.h; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 		2B46860F1ED8790A00C7E021 /* WebEngageGTM */ = {
 			isa = PBXGroup;
 			children = (
-				2B4686271ED879B300C7E021 /* WebEngageGTMTags.h */,
 				2B4686281ED879B300C7E021 /* WEGDeleteUserAttributeTag.h */,
 				2B4686291ED879B300C7E021 /* WEGDeleteUserAttributeTag.m */,
 				2B46862A1ED879B300C7E021 /* WEGEventTag.h */,
@@ -159,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B4686351ED879B300C7E021 /* WEGEventTag.h in Headers */,
-				2B4686321ED879B300C7E021 /* WebEngageGTMTags.h in Headers */,
 				2B4686371ED879B300C7E021 /* WEGGTMUtils.h in Headers */,
 				2B4686391ED879B300C7E021 /* WEGScreenTag.h in Headers */,
 				2B46861E1ED8790A00C7E021 /* WebEngageGTM.h in Headers */,
@@ -290,13 +286,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebEngageGTMTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB568198CD6EE01C732788FC /* [CP] Copy Pods Resources */ = {
@@ -305,9 +304,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebEngageGTMTests/Pods-WebEngageGTMTests-resources.sh",
+				"${PODS_ROOT}/GoogleTagManager/Frameworks/GoogleTagManager.framework/Resources/TagManagerResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,9 +322,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM-resources.sh",
+				"${PODS_ROOT}/GoogleTagManager/Frameworks/GoogleTagManager.framework/Resources/TagManagerResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -335,13 +340,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebEngageGTM-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
