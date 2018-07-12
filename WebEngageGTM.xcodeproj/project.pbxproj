@@ -195,8 +195,8 @@
 				2B4686121ED8790A00C7E021 /* Sources */,
 				2B4686131ED8790A00C7E021 /* Frameworks */,
 				2B4686141ED8790A00C7E021 /* Resources */,
-				32E9264428CE0EF962E0D218 /* [CP] Embed Pods Frameworks */,
 				BB568198CD6EE01C732788FC /* [CP] Copy Pods Resources */,
+				AB60E1DF40A5D39A4305024E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,21 +265,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32E9264428CE0EF962E0D218 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebEngageGTMTests/Pods-WebEngageGTMTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		659AA3D0BFB7CC3C4FA9B51E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,6 +283,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AB60E1DF40A5D39A4305024E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebEngageGTMTests/Pods-WebEngageGTMTests-frameworks.sh",
+				"${PODS_ROOT}/WebEngage/xc9/WebEngage.framework",
+				"${PODS_ROOT}/WebEngage/xc9/WebEngage.framework.dSYM",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebEngage.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/WebEngage.framework.dSYM",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebEngageGTMTests/Pods-WebEngageGTMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BB568198CD6EE01C732788FC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,11 +310,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WebEngageGTMTests/Pods-WebEngageGTMTests-resources.sh",
-				"${PODS_ROOT}/GoogleTagManager/Frameworks/GoogleTagManager.framework/Resources/TagManagerResources.bundle",
+				"${PODS_ROOT}/GoogleTagManager/Frameworks/frameworks/GoogleTagManager.framework/Resources/TagManagerResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TagManagerResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -323,11 +328,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM-resources.sh",
-				"${PODS_ROOT}/GoogleTagManager/Frameworks/GoogleTagManager.framework/Resources/TagManagerResources.bundle",
+				"${PODS_ROOT}/GoogleTagManager/Frameworks/frameworks/GoogleTagManager.framework/Resources/TagManagerResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TagManagerResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

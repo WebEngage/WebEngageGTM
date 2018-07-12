@@ -4,8 +4,8 @@
 target 'WebEngageGTM' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-  pod 'WebEngage', '~> 3.5.4'
-  pod 'GoogleTagManager', '~> 5.0'
+  pod 'WebEngage'
+  pod 'GoogleTagManager'
 
   # Pods for WebEngageGTM
 
