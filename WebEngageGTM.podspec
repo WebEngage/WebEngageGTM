@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author       = { "WebEngage" => "support@webengage.com" }
   s.source       = { :git => "https://github.com/WebEngage/WebEngageGTM.git", :tag => "#{s.version}" }
 
-  s.default_subspec = 'Xcode10'
+  s.static_framework = true
 
   s.subspec 'Xcode10' do |xc10|
     xc10.dependency 'GoogleTagManager'
@@ -25,10 +25,6 @@ Pod::Spec.new do |s|
     xc10.source_files = "WebEngageGTM/**/*"
   end
 
-  s.subspec 'Xcode9' do |xc9|
-    xc9.dependency 'GoogleTagManager'
-    xc9.dependency 'WebEngage/Xcode9'
-    xc9.source_files = "WebEngageGTM/**/*"
-  end
+  s.default_subspec = 'Xcode10'
 
 end
