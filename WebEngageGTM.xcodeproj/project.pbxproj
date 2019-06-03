@@ -20,7 +20,7 @@
 		2B46863A1ED879B300C7E021 /* WEGScreenTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46862F1ED879B300C7E021 /* WEGScreenTag.m */; };
 		2B46863B1ED879B300C7E021 /* WEGSetUserAttributeTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4686301ED879B300C7E021 /* WEGSetUserAttributeTag.h */; };
 		2B46863C1ED879B300C7E021 /* WEGSetUserAttributeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4686311ED879B300C7E021 /* WEGSetUserAttributeTag.m */; };
-		2E27FE8E094BD0F038A6A03C /* libPods-WebEngageGTM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5B76EEF077E06296D807F9 /* libPods-WebEngageGTM.a */; };
+		F747A8E0D27F009D2A28A59F /* libPods-WebEngageGTM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9091F54C9FBD885A33EE6B9A /* libPods-WebEngageGTM.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		280582D8A38B79BFD86E685C /* Pods-WebEngageGTM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebEngageGTM.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM.release.xcconfig"; sourceTree = "<group>"; };
 		2B46860D1ED8790A00C7E021 /* WebEngageGTM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebEngageGTM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4686101ED8790A00C7E021 /* WebEngageGTM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebEngageGTM.h; sourceTree = "<group>"; };
 		2B4686111ED8790A00C7E021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,8 +50,9 @@
 		2B46862F1ED879B300C7E021 /* WEGScreenTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEGScreenTag.m; sourceTree = "<group>"; };
 		2B4686301ED879B300C7E021 /* WEGSetUserAttributeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEGSetUserAttributeTag.h; sourceTree = "<group>"; };
 		2B4686311ED879B300C7E021 /* WEGSetUserAttributeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEGSetUserAttributeTag.m; sourceTree = "<group>"; };
-		4A5B76EEF077E06296D807F9 /* libPods-WebEngageGTM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebEngageGTM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BD34845AC0E21B263C0B65D /* Pods-WebEngageGTM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebEngageGTM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM.debug.xcconfig"; sourceTree = "<group>"; };
+		619CFBA98548703D5D6FE327 /* Pods-WebEngageGTM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebEngageGTM.debug.xcconfig"; path = "Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM.debug.xcconfig"; sourceTree = "<group>"; };
+		9091F54C9FBD885A33EE6B9A /* libPods-WebEngageGTM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebEngageGTM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA78089548202025C4C67D4 /* Pods-WebEngageGTM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebEngageGTM.release.xcconfig"; path = "Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E27FE8E094BD0F038A6A03C /* libPods-WebEngageGTM.a in Frameworks */,
+				F747A8E0D27F009D2A28A59F /* libPods-WebEngageGTM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,21 +75,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		151A1B02FC2C2B436DE66C48 /* Frameworks */ = {
+		09A027CB4EA666E8A953BC81 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4A5B76EEF077E06296D807F9 /* libPods-WebEngageGTM.a */,
+				619CFBA98548703D5D6FE327 /* Pods-WebEngageGTM.debug.xcconfig */,
+				FFA78089548202025C4C67D4 /* Pods-WebEngageGTM.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		290E33095FA6B69C0CB06326 /* Pods */ = {
+		17092D41E0B0E14BB62323F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5BD34845AC0E21B263C0B65D /* Pods-WebEngageGTM.debug.xcconfig */,
-				280582D8A38B79BFD86E685C /* Pods-WebEngageGTM.release.xcconfig */,
+				9091F54C9FBD885A33EE6B9A /* libPods-WebEngageGTM.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2B4686031ED8790A00C7E021 = {
@@ -98,8 +98,8 @@
 				2B46860F1ED8790A00C7E021 /* WebEngageGTM */,
 				2B46861A1ED8790A00C7E021 /* WebEngageGTMTests */,
 				2B46860E1ED8790A00C7E021 /* Products */,
-				290E33095FA6B69C0CB06326 /* Pods */,
-				151A1B02FC2C2B436DE66C48 /* Frameworks */,
+				09A027CB4EA666E8A953BC81 /* Pods */,
+				17092D41E0B0E14BB62323F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,12 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B4686211ED8790A00C7E021 /* Build configuration list for PBXNativeTarget "WebEngageGTM" */;
 			buildPhases = (
-				F7CBA90B7D155D2548AB5E4B /* [CP] Check Pods Manifest.lock */,
+				9A884B3B4C3BE3694AAAEC0D /* [CP] Check Pods Manifest.lock */,
 				2B4686081ED8790A00C7E021 /* Sources */,
 				2B4686091ED8790A00C7E021 /* Frameworks */,
 				2B46860A1ED8790A00C7E021 /* Headers */,
 				2B46860B1ED8790A00C7E021 /* Resources */,
-				C81F8086318541E1B552D775 /* [CP] Copy Pods Resources */,
+				03C7B10247D69F7A02876BA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,7 +255,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C81F8086318541E1B552D775 /* [CP] Copy Pods Resources */ = {
+		03C7B10247D69F7A02876BA3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,16 +273,20 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F7CBA90B7D155D2548AB5E4B /* [CP] Check Pods Manifest.lock */ = {
+		9A884B3B4C3BE3694AAAEC0D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WebEngageGTM-checkManifestLockResult.txt",
 			);
@@ -443,15 +447,16 @@
 		};
 		2B4686221ED8790A00C7E021 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BD34845AC0E21B263C0B65D /* Pods-WebEngageGTM.debug.xcconfig */;
+			baseConfigurationReference = 619CFBA98548703D5D6FE327 /* Pods-WebEngageGTM.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E59R2H2BZQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WebEngageGTM/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webengage.WebEngageGTM;
@@ -462,15 +467,15 @@
 		};
 		2B4686231ED8790A00C7E021 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 280582D8A38B79BFD86E685C /* Pods-WebEngageGTM.release.xcconfig */;
+			baseConfigurationReference = FFA78089548202025C4C67D4 /* Pods-WebEngageGTM.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E59R2H2BZQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WebEngageGTM/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webengage.WebEngageGTM;
