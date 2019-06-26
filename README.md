@@ -1,4 +1,9 @@
-# WebEngageGTM
+# [WebEngageGTM](https://docs.webengage.com/docs/gtm)
+
+[![Version](https://img.shields.io/cocoapods/v/WebEngageGTM.svg?style=flat)](https://cocoapods.org/pods/WebEngageGTM)
+[![License](https://img.shields.io/cocoapods/l/WebEngageGTM.svg?style=flat)](https://cocoapods.org/pods/WebEngageGTM)
+[![Platform](https://img.shields.io/cocoapods/p/WebEngageGTM.svg)](https://cocoapods.org/pods/WebEngageGTM)
+[![LastUpdated](https://img.shields.io/github/last-commit/WebEngage/WebEngageGTM.svg)](https://cocoapods.org/pods/WebEngageGTM)
 
 You can use Google Tag Manager (GTM) to send data from your website or mobile apps to WebEngage.
 
