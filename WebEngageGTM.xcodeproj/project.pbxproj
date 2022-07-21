@@ -262,7 +262,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WebEngageGTM/Pods-WebEngageGTM-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleTagManager/TagManagerResources.bundle",
+				"${PODS_ROOT}/GoogleTagManager/Frameworks/GoogleTagManager.xcframework/Resources/TagManagerResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
