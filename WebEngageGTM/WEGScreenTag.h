@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GoogleTagManager/GoogleTagManager.h>
+#import <GoogleTagManager/TAGCustomFunction.h>
 
 @interface WEGScreenTag : NSObject<TAGCustomFunction>
 
